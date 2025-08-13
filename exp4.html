@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Storefront</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://4kwallpapers.com/images/wallpapers/abstract-background-4480x2520-11615.png"); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+         }
+        
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin-right: auto;
+            font-size: 24px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #f0a500;
+        }
+
+        /* Landing Page Background */
+        .landing {
+            height: 100vh;
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Falder.in%2F%3Fa%3D146178115&psig=AOvVaw1w8eoFPEef0nKUyE1mtONz&ust=1755184609474000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKDm87OKiI8DFQAAAAAdAAAAABAE');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Login Form */
+        .login-form {
+            background-color: rgba(166, 197, 161, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            width: 300px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: all 0.3s;
+        }
+
+        .login-form input[type="text"]:focus,
+        .login-form input[type="password"]:focus {
+            border-color: #f0a500;
+            box-shadow: 0 0 8px rgba(240,165,0,0.5);
+            outline: none;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form button:hover {
+            background-color: #f0a500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img src="https://i.fbcd.co/products/resized/resized-1500-1000/main-750x500-6a81b0546a742b0cd153b55bbe6205b5359b77e04bad25c2d58312879c5342d8.webp" alt="Logo">
+        <h1>E-commerce Storefront</h1>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">*</a>
+    </div>
+
+    <!-- Landing Page Section -->
+    <div class="landing">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
